@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Sample Logo" class="footer-image">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="button">Sign Up</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Let's save nature and make our earth green & clean</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod quam quas quidem ut, animi inventore ex quibusdam.</p>
+            <a href="#" class="button">Get Started</a>
+        </div>
+        <img src="images/car.png" alt="Car" class="hero-img">
+    </section>
+
+    <!-- Hero2 -->
+    <section class="hero2">
+        <div class="center">
+            <h2>Together We Are Stronge</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio labore numquam ratione autem at
+                inventore impedit, asperiores qui repudiandae.</p>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div>
+            <h3>1k</h3>
+            <h4>Network</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, accusantium.</p>
+        </div>
+        <div>
+            <h3>15+</h3>
+            <h4>Countries</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, accusantium.</p>
+        </div>
+        <div>
+            <h3>20M</h3>
+            <h4>Customers</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, accusantium.</p>
+        </div>
+    </section>
+    
+    
+
+    <!-- hero4 -->
+    <section class="hero4">
+        <div class="mask">
+            <h2>Comfortable Luxuries Cars</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque porro reprehenderit ipsum nulla facere
+                placeat temporibus ab quod amet autem!</p>
+            <a href="#" class="button">Get Now</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search">
+        <h2>Find Your Dream Car</h2>
+        <form>
+            <select>
+                <option>Select Make</option>
+                <option>Toyota</option>
+                    <option>Honda</option>
+                    <option>Ford</option>
+                    <option>BMW</option>
+                    <option>Audi</option>
+                    <option>Tesla</option>
+                    <option>Nissan</option>
+                    <option>Chevrolet</option>
+                    <option>Mercedes-Benz</option>
+                    <option>Hyundai</option>
+            </select>
+            <select>
+                <option>Select Model</option>
+                <option>Corolla</option>
+                <option>Civic</option>
+                <option>Mustang</option>
+                <option>3 Series</option>
+                <option>Q5</option>
+                <option>Model S</option>
+                <option>Altima</option>
+                <option>Silverado</option>
+                <option>C-Class</option>
+                <option>Elantra</option>
+            </select>
+            <select>
+                <option>Select Year</option>
+                <option>2024</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+            </select>
+            <select>
+                <option>Select Location</option>
+                <option>New York</option>
+                <option>Los Angeles</option>
+                <option>Chicago</option>
+                <option>Atlanta</option>
+                <option>San Francisco</option>
+            </select>
+            <div class="slider-container">
+                <div class="price-display">
+                <label for="price-range">Price Range:
+                </label>
+                    <span id="price-min">$10,000</span> - <span id="price-max">$50,000</span>
+                </div>
+                <input
+                    type="range"
+                    id="price-range"
+                    min="10000"
+                    max="50000"
+                    step="1000"
+                    value="30000"
+                    oninput="updatePrice(this.value)">
+            </div>
+            <button class="button">Advanced Search</button>
+        </form>
+    </section>
+
+    <!-- Featured Vehicles Section -->
+    <section class="featured-vehicles">
+        <h2>Feature Vehicles</h2>
+        <div class="vehicle-container">
+            <div class="vehicle-card">
+                <img src="images/vehicle1.png" alt="Vehicle">
+                <h3>$40,000</h3>
+                <p>2023 Model - Sedan</p>
+            </div>
+            <div class="vehicle-card">
+                <img src="images/vehicle2.png" alt="Vehicle">
+                <h3>$50,000</h3>
+                <p>2023 Model - SUV</p>
+            </div>
+            <div class="vehicle-card">
+                <img src="images/vehicle3.png" alt="Vehicle">
+                <h3>$60,000</h3>
+                <p>2023 Model - Coupe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Accessories Section -->
+    <section class="shop-accessories">
+        <h2>Shop Accessories</h2>
+        <div class="accessories-container">
+            <div class="accessory-item">
+                <img src="images/accessory1.png" alt="Accessory">
+                <p>Speedometer</p>
+                <h3>$200</h3>
+            </div>
+            <div class="accessory-item">
+                <img src="images/accessory2.png" alt="Accessory">
+                <p>Car Seat</p>
+                <h3>$300</h3>
+            </div>
+            <div class="accessory-item">
+                <img src="images/accessory3.png" alt="Accessory">
+                <p>Car Tire</p>
+                <h3>$250</h3>
+            </div>
+            <div class="accessory-item">
+                <img src="images/accessory4.png" alt="Accessory">
+                <p>Steering Wheel</p>
+                <h3>$200</h3>
+            </div><div class="accessory-item">
+                <img src="images/accessory5.png" alt="Accessory">
+                <p>Brake Disc</p>
+                <h3>$200</h3>
+            </div><div class="accessory-item">
+                <img src="images/accessory6.png" alt="Accessory">
+                <p>Headlight Assembly</p>
+                <h3>$250</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell-Buy Section -->
+    <section class="sell-buy">
+        <div class="car-option buy-car">
+          <h3>Are You Looking?</h3>
+          <h1>TO BUY A CAR</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Proin blandit egestas suscipit varius sed.</p>
+          <button>Search Your Car</button>
+        </div>
+        <div class="car-option sell-car">
+          <h3>Do You Want To?</h3>
+          <h1>Sell Your Car</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Proin blandit egestas suscipit varius sed.</p>
+          <button>Let Us Know</button>
+        </div>
+    </section>      
+
+    <!-- Latest News Section -->
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="images/news1.jpg" alt="News">
+                <h3>Tesla 2024 Launch</h3>
+                <p>Tesla reveals 2024 Model 3 with improved design and features.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="news-item">
+                <img src="images/news2.jpeg" alt="News">
+                <h3>Auto Expo Highlights</h3>
+                <p>Auto Expo 2024 showcases futuristic cars and sustainable automotive technologies.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-container">
+            <div class="review-item">
+                <div class="review-header">
+                    <img src="https://via.placeholder.com/40" alt="Ronald Richards">
+                    <div>
+                        <h3>Ronald Richards</h3>
+                        <div class="role">Account Manager</div>
+                    </div>
+                </div>
+                <p>"We can always rely on your team to answer our calls at any time of the day and provide us with prompt service!"</p>
+            </div>
+            <div class="review-item">
+                <div class="review-header">
+                    <img src="https://via.placeholder.com/40" alt="Wade Warren">
+                    <div>
+                        <h3>Wade Warren</h3>
+                        <div class="role">CEO</div>
+                    </div>
+                </div>
+                <p>"We can always rely on your team to answer our calls at any time of the day and provide us with prompt service!"</p>
+            </div>
+            <div class="review-item">
+                <div class="review-header">
+                    <img src="https://via.placeholder.com/40" alt="Bessie Cooper">
+                    <div>
+                        <h3>Bessie Cooper</h3>
+                        <div class="role">Human Resources</div>
+                    </div>
+                </div>
+                <p>"We can always rely on your team to answer our calls at any time of the day and provide us with prompt service!"</p>
+            </div>
+        </div>
+      </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Sample Logo" class="footer-image">
+        </div>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Warehousing and Distribution</a></li>
+              <li><a href="#">Term & Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Buying & Selling</h4>
+            <ul>
+              <li><a href="#">Find a Car</a></li>
+              <li><a href="#">Find a Dealer</a></li>
+              <li><a href="#">Listing by Car</a></li>
+              <li><a href="#">Certified Pre-Owned</a></li>
+              <li><a href="#">Car Payment Calculator</a></li>
+              <li><a href="#">Car Reviews & Rating</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Compare Side by Side</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Terms & Services</h4>
+            <ul>
+              <li><a href="#">Compliance</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Mission & Core Values</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li>Phone: 215 - 856 - 0400</li>
+              <li>Email: <a href="mailto:info@logo.sample.com">info@logo.sample.com</a></li>
+              <li>Social Links:</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Join Our Newsletter</h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Join Our Newsletter" required>
+              <button type="submit">Join Now</button>
+            </form>
+            <p>We’ll send you weekly updates for your better.</p>
+            <div class="social-links">
+              <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+              <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+              <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+              <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+<link rel="stylesheet" href="js/script.js">
+</html>
